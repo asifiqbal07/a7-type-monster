@@ -142,10 +142,12 @@ button {
 }
 
 #histories {
-  display: flex;
-  /* flex-wrap: wrap; */
-  gap: 2%;
-  justify-content: space-around;
+  
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: auto auto auto;
+  row-gap: 5%;
+  column-gap: 1%;
 }
 
 .card {
@@ -192,6 +194,7 @@ button {
     flex-direction: column;
   }
   #histories {
+    display: flex;
     flex-wrap: wrap;
     text-align: center;
     gap: 2%;
